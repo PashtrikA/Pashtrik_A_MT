@@ -1,4 +1,5 @@
 A.1 Installation Process
+
 Firstly, Docker needs to be installed on the system. 
 Next, the Docker file from the GitHub repository of the thesis must be downloaded. 
 To build the Docker image from the Docker file, the following command can be used:
@@ -10,6 +11,7 @@ docker run --name=aas-env -p 8081:8081 -v C:/tmp/application.properties:/applica
 After successfully executing the command, the AAS environment should be up and running.
 
 A.2 Usage Guide
+
 The AAS Environment can be accessed through the specified port (8081) on the host machine. The API endpoint documentation can be found at:
 
 http://{host}:{port}/v3/api-docs
