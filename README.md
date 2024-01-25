@@ -1,12 +1,12 @@
 A.1 Installation Process
 
 Firstly, Docker needs to be installed on the system. 
-Next, the Docker file from the GitHub repository of the thesis must be downloaded. 
-To build the Docker image from the Docker file, the following command can be used:
-docker build -t mt-custom-aas-env .
+Next, the Docker image from the DockerHub repository of the thesis must be downloaded. 
+To pull the Docker image from the DockerHub, the following command can be used:
+docker pull pasha98/ma_aas_env:001
 To run the container with the custom AAS environment, this command can be used:
 
-docker run --name=aas-env -p 8081:8081 -v C:/tmp/application.properties:/application/application.properties mt-custom-aas-env
+docker run --name=aas-env -p 8081:8081 -v C:/tmp/application.properties:/application/application.properties mt_aas_env
 
 After successfully executing the command, the AAS environment should be up and running.
 
